@@ -1,0 +1,16 @@
+# Recursion
+* [Recursion or Iteration?](https://stackoverflow.com/questions/72209/recursion-or-iteration/72694#72694)
+  * `Loops may achieve a performance gain for your program. Recursion may achieve a performance gain for your programmer. Choose which is more important in your situation!`
+  * `使用循环会对你的程序运行来讲性能更好,使用递归会对你的程序代码来讲阅读更好,在你的场景下选择合适你的解决方案`
+* Base case & Recursion case
+  * base case: for stop the recursion(must have)
+  * recursion case: for recursion
+* The stack
+  * _push_ (insert)
+  * _pop_ (remove and read)
+* 3.1 
+  * greet2 函数在 greet 函数内部
+* 3.2 
+  * stack oom
+- [] 实现 stack 数据结构
+- [] 学会实践 tail stack
