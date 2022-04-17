@@ -1,8 +1,32 @@
-2.1 Linked list
-2.2 Linked list
-2.3 Array
-2.4 Slow
-2.5 It dependences.
-
+## Selection sort
+* How memory works
+* Arrays and linked lists
+  * Arrays Reading O(1)
+  * Array Insertion O(n)
+  * Lists Reading O(n)
+  * Lists Insertion O(1)
+* Exercises
+  * 2.1 Linked list
+  * 2.2 Linked list
+  * 2.3 Array
+  * 2.4 Slow
+  * 2.5 It dependences.
+* Recap
+  * Your computer’s memory is like a giant set of drawers
+    * 计算机内存像一大堆抽屉
+  * When you want to store multiple elements, use an array or a list.
+    * 存储多个元素时选择使用 array 或者 list
+  * With an array, all your elements are stored right next to each other.
+    * 在使用 array 的时候所有的元素都是紧挨着存储的
+  * With a list, elements are strewn all over, and one element stores
+the address of the next one.
+    * 使用 list 的时候所有的元素都是散落开的，其中每个元素存储着下一个元素的地址
+  * Arrays allow fast reads.
+    * array 的读取速度很快
+  * Linked lists allow fast inserts and deletes.
+    * linked list 的插入与删除速度很快
+  * All elements in the array should be the same type (all ints,
+all doubles, and so on).
+    * array 里的元素类型应该都是相同的 
 - [] Pyhton Array
 - [] 实现 Linked list 数据结构

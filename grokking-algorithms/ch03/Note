@@ -8,9 +8,22 @@
 * The stack
   * _push_ (insert)
   * _pop_ (remove and read)
-* 3.1 
-  * greet2 函数在 greet 函数内部
-* 3.2 
-  * stack oom
+* Exercises 
+  * 3.1 
+    * greet2 函数在 greet 函数内部
+  * 3.2 
+    * stack oom
+* Recap
+  * Recursion is when a function calls itself.
+    * 递归指的是方法调用方法自己
+  * Every recursive function has two cases: the base case
+  and the recursive case.
+    * 每个递归都有两个条件：base case 和 recursive case
+  * A stack has two operations: push and pop.
+    * 栈有两个操作符：push 和 pop
+  * All function calls go onto the call stack.
+    * 所有的函数调用都进入 call stack
+  * The call stack can get very large, which takes up a lot of memory.
+    * call stack 可能很大，这种会占用很多的内存
 - [] 实现 stack 数据结构
 - [] 学会实践 tail stack
