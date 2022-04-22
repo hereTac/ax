@@ -1,0 +1,27 @@
+## Quicksort
+* Divide & conquer
+  * Figure out a simple case as the base case.
+    * 找出简单的 base case
+  * Figure out how to reduce your problem and get to the base case.
+    * 如何缩减问题规模，使其符合 base case
+* Quicksort
+* Big O notation revisited
+  * Merge sort vs. quicksort
+  * Average case vs. worst case
+* Exercises
+  * Greatest Common Divisor(GCD)
+    * [数学](https://www.nduoti.cn/html/qDetail/02/g1/201204/r30og102273934.html) 上的相关知识可以参考 
+    * 这里采用欧几里得算法(即 [辗转相除法](https://www.nduoti.cn/gzsx/711/) )实现最大公约数 [GCD](https://oi-wiki.org/math/number-theory/gcd/) 
+  * 4.1 MySumRecursive
+    * 使用递归实现的数组循环累加求和
+  * 4.2 CountListElements 
+    * 使用递归实现的 List 元素数量 Count 即 len 方法
+  * 4.3 FindMaxElementInList
+    * 使用递归实现查找 List 内最大的元素
+  * 4.4 BinarySearchRecursive
+    * 使用递归实现 BinarySearch
+    * 核心思路：数组原样递归传递不动里面的元素，只移动 low & high 的 offset 直至目标元素的 offset
+    * recursive case: 缩减问题规模，数组元素的两个 offset low & offset high 不断的改变缩小
+    * base case：寻找的元素与目标元素相等，返回寻找元素的 offset
+* Recap
+  *  
