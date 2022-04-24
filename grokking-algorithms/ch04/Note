@@ -4,7 +4,6 @@
     * 找出简单的 base case
   * Figure out how to reduce your problem and get to the base case.
     * 如何缩减问题规模，使其符合 base case
-* Quicksort
 * Big O notation revisited
   * Merge sort vs. quicksort
   * Average case vs. worst case
@@ -23,5 +22,24 @@
     * 核心思路：数组原样递归传递不动里面的元素，只移动 low & high 的 offset 直至目标元素的 offset
     * recursive case: 缩减问题规模，数组元素的两个 offset low & offset high 不断的改变缩小
     * base case：寻找的元素与目标元素相等，返回寻找元素的 offset
+  * 4.5 QuickSort
+    * base case: 数组元素个数为 0 或者 1 的时候，即返回元素自己，即不用再排序自己
+    * recursive case: 缩减问题规模，定 1 个基准值，如将 array[0] 定为基准值，同时将除基准值意外的元素内容都分为大于和小于基准值的两个子数组，同时对两个子数组进行递归调用快排
+  * 4.6 QuickSortListComprehension
+    * 采用 Python List Comprehension 写法实现 QuickSort 
+  * 4.7 MergeSort
+    * recursive case: 
+      * 分割 1 个数组成为 2 个子数组，并递归的分割子数组并合并 2 个子数组。
+      * 其中合并 2 个子数组的方法里 2 个子数组必须满足已经排序条件，因为分割到 base case 子数组大小为 1 即默认就是自己排序自己即已排序，所以该合并 2 个子数组方法里是基于 2 个子数组已经排序的前提，考虑实现合并的逻辑。
+      * 可以基于 2 个子数组已经排序的前提，先实现合并方法，参考 MergeSortStage1
+    * base case: 子数组大小为 1
 * Recap
-  *  
+  * D&C works by breaking a problem down into smaller and smaller pieces. If you’re using D&C on a list, the base case is probably an empty array or an array with one element. 
+    * D&C 将问题逐步分解。使用 D&C 处理列表时，基线条件很可能是空数组或只包含一个元素的数组。
+  * If you’re implementing quicksort, choose a random element as the pivot. The average runtime of quicksort is O(n log n)!
+    * 实现快速排序时，请随机地选择用作基准值的元素。快速排序的平均运行时间为 O(n log n)。
+  * The constant in Big O notation can matter sometimes. That’s why quicksort is faster than merge sort.
+    * 大 O 表示法中的常量有时候事关重大，这就是快速排序比合并排序快的原因所在。
+  * The constant almost never matters for simple search versus binary search, because O(log n) is so much faster than O(n) when your list gets big.
+    * 比较简单查找和二分查找时，常量几乎无关紧要，因为列表很长时，O(log n) 的速度比 O(n) 快得多。
+*  
