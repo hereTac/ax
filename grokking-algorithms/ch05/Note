@@ -1,0 +1,60 @@
+## Hash tables
+* Requirements
+  * It needs to be consistent. 
+    * 相同的数据输入总是得到相同的/一致的数据
+  * It should map different words to different numbers. 
+    * 不同的输入得到不同的输出数据
+* How to Work
+  * The hash function consistently maps a name to the same index
+    * 散列函数总是将同样的输入映射到相同的索引
+  * The hash function maps different strings to different indexes
+    * 散列函数将不同的输入映射到不同的索引
+  * The hash function knows how big your array is and only returns valid
+indexes
+    * 散列函数知道数组有多大，只返回有效的索引
+* Alias
+  * hash maps | maps | dictionaries | associative arrays
+  * 散列映射 | 映射 | 字典 | 关联数组
+* Exercises
+  * 5.5 D
+  * 5.6 B
+  * 5.7 C
+* Recap
+  * Modeling relationships from one thing to another thing
+    * 模拟映射关系用于查找
+  * Filtering out duplicates 
+    * 过滤避免重复
+  * Caching/memorizing data instead of making your server do work 
+    * 缓存数据，以免服务器处理生成它们（减轻服务器压力）* 
+* Collisions
+  * hash function always maps different keys to different slots in the array.
+  * hash function 无法做到总是映射不同的 keys 到不同的 slots 在数组中 values
+  * worst case 就是所有的数据都散列分布在同 1 个数组位置上，其他数组位置上都是空的，即 1 个链表在 1 个数组位置上
+* Performance
+  * hash tables O
+    * average case short for AC
+    * worst case short for WC
+    * AC search O(1)
+    * WC search O(n)
+    * AC insert O(1)
+    * WC insert O(n)
+    * AC delete O(1)
+    * WC delete O(n)
+  * arrays O
+    * search O(1)
+    * insert O(n)
+    * delete O(n)
+  * linked lists O
+    * search O(n)
+    * insert O(1)
+    * delete O(1)
+  * Average case
+    * Hash table search O(1) insert O(1) delete O(1)
+    * Array search O(1) Linked List insert O(1) delete O(1)
+  * Worst case(Collisions)
+    * Hash table search O(n) insert O(n) delete O(n)
+    * Linked List search O(n) Array insert O(n) delete O(n)
+  * Avoid Collisions 避免冲突非常重要，避免冲突的两个要点
+    * A low load factor
+      * 如果 factor 超过 0.7 应该去调整 hash table 的长度
+    * A good hash function
