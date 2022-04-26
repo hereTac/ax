@@ -1,0 +1,33 @@
+## Breadth-first Search
+* Graphs
+  * Graphs are made up of nodes and edges
+  * 图由节点和边组成
+* Breadth-first search
+  * Question type 1: Is there a path from node A to node B?
+    * 从节点A出发，有前往节点B的路径吗
+  * Question type 2: What is the shortest path from node A to node B?
+    * 从节点A出发，前往节点B的哪条路径最短
+* Queues
+  * enqueue  
+  * dequeue
+  * The queue is called a FIFO data structure: First In, First Out. 
+    * 队列是一种先进先出 （First In First Out，FIFO）的数据结构
+  * In contrast, a stack is a LIFO data structure: Last In, First Out.
+    * 而栈是一种后进先出 （Last In First Out，LIFO）的数据结构。
+* Graphs type
+  * directed graphs. 有向图，即单向关系
+  * undirected graphs. 无向图，同时也是双向关系
+* Exercises
+* Recap
+  * Breadth-first search tells you if there’s a path from A to B.
+  * If there’s a path, breadth-first search will find the shortest path.
+  * If you have a problem like “find the shortest X,” try modeling your problem as a graph, and use breadth-first search to solve.
+  * A directed graph has arrows, and the relationship follows the direction of the arrow (rama -> adit means “rama owes adit money”).
+  * Undirected graphs don’t have arrows, and the relationship goes both ways (ross - rachel means “ross dated rachel and rachel dated ross”).
+  * Queues are FIFO (First In, First Out).
+  * Stacks are LIFO (Last In, First Out).
+  * You need to check people in the order they were added to the search list, so the search list needs to be a queue. Otherwise, you won’t get the shortest path.
+    * 你需要按加入顺序检查搜索列表中的人，否则找到的就不是最短路径，因此搜索列表必须是队列。
+      * 存储节点的 dict 可以是无序的，但是加入到 queue 的时候必须是有序的，即 pop 该节点之后随即要 append 该节点相关联的节点
+  * Once you check someone, make sure you don’t check them again. Otherwise, you might end up in an infinite loop.
+    * 对于检查过的人，务必不要再去检查，否则可能导致无限循环。
