@@ -1,2 +1,38 @@
 ## Dijkstra's Algorithm
-* 
+* weighted graph
+  * To calculate the shortest path in a weighted graph, use Dijkstra’s algorithm.
+* unweighted graph
+  * To calculate the shortest path in an unweighted graph, use breadth-first search. 
+* Graphs type
+  * directed graphs. 有向图，即单向关系
+  * undirected graphs. 无向图，同时也是双向关系,无向图意味着两个节点彼此指向对方，其实就是环！无向 == 双向== 环
+* directed acyclic graph，DAG
+  * 有向无环图
+  * Dijkstra’s algorithm only works with directed acyclic graphs, called DAGs for short.  
+  * 狄克斯特拉算法只适用于有向无环图
+* Negative-weight 负权边
+  * So you can’t use negative-weight edges with Dijkstra’s algorithm. If you want to find the shortest path in a graph that has negative-weight edges, there’s an algorithm for that! It’s called the Bellman-Ford algorithm.
+  * 因此，不能将狄克斯特拉算法用于包含负权边的图 。在包含负权边的图中，要找出最短路径，可使用另一种算法——贝尔曼-福德算法 （Bellman-Ford algorithm）。
+* Dijkstra's Algorithm
+  * 初始化数据 
+    1. 初始的所有的 weight values 权重边值大小的数据状态 
+    2. 初始的 Costs 的数据状态 
+    3. 初始的 Parents 的数据状态
+  * 核心步骤
+    1. 在 cost list 里找出 the lowest cost 的 node
+    2. 更新该 node 的 neighbor 节点内容（cost && parent）
+    3. 并追加到已处理 node 的 list 里
+    4. 重复 1. 2. 3. 直到 cost list 的节点都处理完即得到最终更新的 cost list && parent list
+* Exercises
+  * 7.1 A 8
+  * 7.1 B X
+  * 7.1 C X
+* Recap
+  * Breadth-first search is used to calculate the shortest path for an unweighted graph.
+    * 广度优先搜索用于在非加权图中查找最短路径。
+  * Dijkstra’s algorithm is used to calculate the shortest path for a weighted graph.
+    * 狄克斯特拉算法用于在加权图中查找最短路径。
+  * Dijkstra’s algorithm works when all the weights are positive.
+    * 仅当权重为正时狄克斯特拉算法才管用。
+  * If you have negative weights, use the Bellman-Ford algorithm. 
+    * 如果图中包含负权边，请使用贝尔曼-福德算法。
