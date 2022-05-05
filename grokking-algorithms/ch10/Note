@@ -1,0 +1,21 @@
+## Trees
+* Array
+  * Search O(log n)
+  * Insert O(n)
+  * Delete O(n)
+* Binary Search Tree
+  * Search O(log n)
+  * Insert O(log n)
+  * Delete O(log n)
+* There are special binary search trees that balance themselves. One example is the red-black tree.
+  * 也有一些处于平衡状态的特殊二叉查找树，如红黑树。
+* B-trees, Red-black trees,  Heaps,  Splay trees 
+  * B树，红黑树，堆，伸展树。
+* Inverted indexes
+  * 反向索引
+* The Fourier transform
+  * 傅里叶变换
+* Parallel algorithms
+  * 并行算法
+  * Map Reduce
+  * HyperLogLog
