@@ -1,2 +1,34 @@
 ## Greedy Algorithm
-* 
+
+* The classroom scheduling problem
+  * A greedy algorithm is simple: at each step, pick the optimal move.
+    * 贪婪算法很简单：每步都采取最优的做法。
+  * at each step you pick the locally optimal solution, and in the end you’re left with the globally optimal solution.
+    * 你每步都选择局部最优解，最终得到的就是全局最优解。
+* The knapsack problem
+  * Clearly, the greedy strategy does not give you the optimal solution here. But it gets you pretty close.
+    * 在这里，贪婪策略显然不能获得最优解，但非常接近。
+  * Sometimes all you need is an algorithm that solves the problem pretty well. And that’s where greedy algorithms shine, because they’re simple to write and usually get pretty close.
+    * 有时候，你只需找到一个能够大致解决问题的算法，此时贪婪算法正好可派上用场，因为它们实现起来很容易，得到的结果又与正确结果相当接近。
+* The set-covering problem
+  * Approximation algorithms
+    * It is Greedy algorithms.
+* Sets
+  * Recap
+    * Sets are like lists, except sets can’t have duplicates.
+    * 集合类似于列表，只是不能包含重复的元素
+    * You can do some interesting operations on sets, like union,intersection, and difference.
+    * 你可执行一些有趣的集合运算，如并集、交集和差集
+* Exercises
+  * 8.6 No
+  * 8.7 No
+  * 8.8 Yes
+* Recap
+  * Greedy algorithms optimize locally, hoping to end up with a global optimum. 
+    * 贪婪算法寻找局部最优解，企图以这种方式获得全局最优解
+  * NP-complete problems have no known fast solution.
+    * 对于NP完全问题，还没有找到快速解决方案
+  * If you have an NP-complete problem, your best bet is to use an approximation algorithm.
+    * 面临NP完全问题时，最佳的做法是使用近似算法
+  * Greedy algorithms are easy to write and fast to run, so they make good approximation algorithms. 
+    * 贪婪算法易于实现、运行速度快，是不错的近似算法
